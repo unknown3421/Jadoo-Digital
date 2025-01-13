@@ -1,4 +1,3 @@
-# Use official PHP image as the base
 FROM php:7.4-apache
 
 # Set working directory
