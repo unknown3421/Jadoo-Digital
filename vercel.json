@@ -2,14 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "auto_playlist.py",
-      "use": "@vercel/python"
+      "src": "api/*.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "index.php",
+      "use": "@vercel/php"
     }
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "auto_playlist.py"
+      "src": "/api/.*",
+      "dest": "/api.php"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.php"
     }
   ]
 }
