@@ -7,7 +7,7 @@ import requests
 API_LOGIN_URL = "https://api.jadoodigital.com/api/v2.1/user/auth/login"
 API_REFRESH_URL = "https://api.jadoodigital.com/api/v2.1/user/auth/refresh"
 INPUT_FILE = "playlist.m3u"  # Input playlist file
-OUTPUT_FILE = "out.m3u"      # Output playlist file
+OUTPUT_FILE = "api.m3u"      # Output playlist file
 TOKEN_FILE = "token.cache"
 
 USERNAME = "jadoo6000"
